@@ -1,0 +1,60 @@
+/*-------------------Blog Content-------------------*/
+
+main > section > .blog {
+  background: url("../images/background/envelope.svg");
+  background-repeat: inherit;
+  background-position: right;
+  height: 100vh;
+  width: 100%;
+  background-size: 100%;
+}
+
+main .blog .blog-post .blog-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  height: 30%;
+  margin: 5rem 2rem;
+  box-shadow: 0 15px 20px rgb(0, 0, 0, 0.2);
+  background-color: rgb(250, 249, 249);
+}
+
+main .blog-content .blog-title {
+  padding: 2rem 0;
+}
+
+main .blog-content .btn-blog {
+  padding: 0.7rem 2rem;
+  background: var(--sky);
+  margin: 0.5rem;
+}
+
+main .blog-content span {
+  display: block;
+}
+
+section .container .owl-nav {
+  position: absolute;
+  top: 0%;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next {
+  color: var(--text-gray);
+  background: transparent;
+  font-size: 3rem;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: transparent;
+  color: var(--midnight);
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  outline: none;
+}
+
+/*-------X------------Blog Content----------X---------*/
