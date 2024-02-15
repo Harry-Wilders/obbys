@@ -24,6 +24,28 @@ const navToggleEvent = function (elem) {
 navToggleEvent(navElemArr);
 navToggleEvent(navLinks);
 
+// Function to remove the 'active' class from all navbar links
+const removeActiveClass = () => {
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+  });
+};
+
+// Event listener for each navbar link
+navLinks.forEach((link) => {
+  link.addEventListener("click", function () {
+    // Remove 'active' class from all links
+    removeActiveClass();
+
+    // Add 'active' class to the clicked link
+    this.classList.add("active");
+
+    // Close the navbar (if it's open)
+    navbar.classList.remove("active");
+    overlay.classList.remove("active");
+  });
+});
+
 /**
  * header sticky & go to top
  */
