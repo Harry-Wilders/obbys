@@ -1,0 +1,13 @@
+clientName +++
+designation +++
+orgName 
+country ++;
+email ++;
+phone ++
+status ++;
+events;
+technical;
+others;
+comment;
+agree;
+privacy;

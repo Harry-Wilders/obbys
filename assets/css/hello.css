@@ -22,59 +22,63 @@
   -webkit-font-smoothing: antialiased;
 }
 @font-face {
-  font-family: jostregular;
-  src: url("../fonts/jost-regular-webfont.woff2") format("woff2"),
-    url("../fonts/jost-regular-webfont.woff") format("woff");
+  font-family: robotoregular;
+  src: url("../fonts/roboto-regular/roboto-regular.woff2") format("woff2"),
+    url("../fonts/roboto-regular/roboto-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: jostlight;
-  src: url("../fonts/jost-light-webfont.woff2") format("woff2"),
-    url("../fonts/jost-light-webfont.woff") format("woff");
+  font-family: robotolight;
+  src: url("../fonts/roboto-light/roboto-light.woff2") format("woff2"),
+    url("../fonts/roboto-light/roboto-light.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: jostbold;
-  src: url("../fonts/jost-bold-webfont.woff2") format("woff2"),
-    url("../fonts/jost-bold-webfont.woff") format("woff");
+  font-family: robotobold;
+  src: url("../fonts/roboto-bold/roboto-bold.woff2") format("woff2"),
+    url("../fonts/roboto-bold/roboto-bold.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: jostextralight;
-  src: url("../fonts/jost-extralight-webfont.woff2") format("woff2"),
-    url("../fonts/jost-extralight-webfont.woff") format("woff");
+  font-family: robotoextralight;
+  src: url("../fonts/roboto-thin/Roboto-Thin.woff2") format("woff2"),
+    url("../fonts/roboto-thin/Roboto-Thin.woff2") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: cinzelregular;
-  src: url(../fonts/cinzel-regular-webfont.eot);
-  src: url(../fonts/cinzel-regular-webfont.eot?#iefix)
+  src: url(../fonts/cinzel/cinzel-regular-webfont.eot);
+  src: url(../fonts/cinzel/cinzel-regular-webfont.eot?#iefix)
       format("embedded-opentype"),
-    url(../fonts/cinzel-regular-webfont.woff2) format("woff2"),
-    url(../fonts/cinzel-regular-webfont.woff) format("woff"),
-    url(../fonts/cinzel-regular-webfont.ttf) format("truetype"),
-    url(../fonts/cinzel-regular-webfont.svg#cinzelregular) format("svg");
+    url(../fonts/cinzel/cinzel-regular-webfont.woff2) format("woff2"),
+    url(../fonts/cinzel/cinzel-regular-webfont.woff) format("woff"),
+    url(../fonts/cinzel/cinzel-regular-webfont.ttf) format("truetype")
+      url(../fonts/cinzel/cinzel-regular-webfont.svg#cinzelregular)
+      format("svg");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: playfair_displayregular;
-  src: url(../fonts/playfairdisplay-regular-webfont.eot);
+  src: url(../fonts/playfairdisplay/playfairdisplay-regular-webfont.eot);
   src: url(../fonts/playfairdisplay-regular-webfont.eot?#iefix)
       format("embedded-opentype"),
-    url(../fonts/playfairdisplay-regular-webfont.woff2) format("woff2"),
-    url(../fonts/playfairdisplay-regular-webfont.woff) format("woff"),
-    url(../fonts/playfairdisplay-regular-webfont.ttf) format("truetype"),
-    url(../fonts/playfairdisplay-regular-webfont.svg#playfair_displayregular)
+    url(../fonts/playfairdisplay/playfairdisplay-regular-webfont.woff2)
+      format("woff2"),
+    url(../fonts/playfairdisplay/playfairdisplay-regular-webfont.woff)
+      format("woff"),
+    url(../fonts/playfairdisplay/playfairdisplay-regular-webfont.ttf)
+      format("truetype"),
+    url(../fonts/playfairdisplay/playfairdisplay-regular-webfont.svg#playfair_displayregular)
       format("svg");
   font-weight: 400;
   font-style: normal;
@@ -86,7 +90,7 @@
   max-height: 715px;
 }
 body {
-  font-family: jostregular;
+  font-family: robtoregular;
   background-image: url(../images/header-bg.png) !important;
   background-position: left top;
   background-repeat: repeat-x;
@@ -116,7 +120,7 @@ body {
   text-align: center;
   color: #fff;
   font-size: 15px;
-  font-family: jostlight;
+  font-family: robotolight;
 }
 #cookies-close {
   background: #e10b0b none repeat scroll 0 0;
@@ -144,7 +148,7 @@ body {
   text-align: center;
   display: inline-block;
   border: none;
-  font-family: jostbold;
+  font-family: robotobold;
   font-size: 17px;
   margin-left: 2%;
   font-display: swap;
@@ -226,7 +230,7 @@ nav > div > ul > li > a {
   color: #fff;
   text-transform: uppercase;
   font-size: 14.98px;
-  font-family: jostregular;
+  font-family: robtoregular;
   position: relative;
   padding: 15px 48px;
 }
@@ -419,7 +423,7 @@ ul.top_nav li a {
 .homebanner .flex-caption h1,
 .homebanner h1 {
   white-space: nowrap;
-  font-family: jostbold;
+  font-family: robotobold;
   font-size: 31.96px;
   text-transform: uppercase;
   margin: 0 0 5px;
@@ -434,7 +438,7 @@ ul.top_nav li a {
 }
 .homebanner .flex-caption h2,
 .homebanner h2 {
-  font-family: jostlight !important;
+  font-family: robotolight !important;
   color: #fff;
   font-size: 31.96px;
   margin: 5px 0;
@@ -482,7 +486,7 @@ ul.top_nav li a {
 .talk_from h3 {
   color: #fe3535;
   font-size: 31.96px;
-  font-family: jostlight;
+  font-family: robotolight;
   text-transform: uppercase;
   margin: 0;
 }
@@ -492,7 +496,7 @@ ul.top_nav li a {
 .talk_from p {
   color: #fff;
   font-size: 18.98px;
-  font-family: jostlight;
+  font-family: robotolight;
   line-height: 21px;
   margin-bottom: 0;
   margin-top: 10px;
@@ -873,11 +877,11 @@ ul.top_nav li a {
   font-size: 33.02px;
   text-transform: uppercase;
   text-align: left;
-  font-family: jostlight;
+  font-family: robotolight;
 }
 .ftalk_wrap p {
   font-size: 19.06px;
-  font-family: jostlight;
+  font-family: robotolight;
   line-height: 24.76px;
   position: relative;
   padding-left: 25px;
@@ -1023,7 +1027,7 @@ input[type="email"]:not(.browser-default) {
 .page-footer ul.fnav li a {
   color: #fff;
   font-size: 14px;
-  font-family: jostlight;
+  font-family: robotolight;
   display: block;
   padding: 5px 3px;
   position: relative;
@@ -1350,7 +1354,7 @@ input[type="email"]:not(.browser-default) {
 }
 .aai_services h2 {
   font-size: 23px;
-  font-family: jostextralight;
+  font-family: robotoextralight;
   color: #5c5c5c;
 }
 .aai_services p {
@@ -1367,23 +1371,23 @@ input[type="email"]:not(.browser-default) {
 .banner-cont h1 strong {
   color: #fff;
   font-size: 25.96px;
-  font-family: jostbold;
+  font-family: robotobold;
   text-transform: uppercase;
   margin: 0;
 }
 .banner-cont h1 {
-  font-family: jostlight;
+  font-family: robotolight;
   font-size: 18px;
   color: #fff;
   text-transform: uppercase;
   margin: 0;
 }
 .banner-cont h1 strong {
-  font-family: jostbold !important;
+  font-family: robotobold !important;
   display: block;
 }
 .banner-cont h2 span {
-  font-family: jostregular;
+  font-family: robtoregular;
 }
 .homebanner .banner-cont h2 {
   font-size: 40px;
@@ -1401,7 +1405,7 @@ input[type="email"]:not(.browser-default) {
   font-size: 31.96px;
   text-transform: uppercase;
   margin-top: 0;
-  font-family: jostlight;
+  font-family: robotolight;
 }
 .aai_icons {
   padding: 25px 0 80px;
@@ -1535,7 +1539,7 @@ ul.pp-ul li {
 .form-horizontal p {
   color: #fff;
   font-size: 15px;
-  font-family: jostlight;
+  font-family: robotolight;
   line-height: 21px;
   margin-bottom: 0;
   margin-top: 10px;
@@ -1621,17 +1625,26 @@ ul.pp-ul li {
   font-size: 15px;
   text-transform: uppercase;
   margin: 0 0 15px;
-  font-family: jostregular !important;
+  font-family: robtoregular !important;
 }
 .form-check {
   color: rgb(240, 175, 178);
 }
 .agree-span {
   display: inline;
+  line-height: 0;
+}
+#agreeRadio:checked,
+#disagreeRadio:checked {
+  background-color: #505050 !important;
 }
 .agree-emails {
   display: flex;
   gap: 2rem;
+}
+
+.label-text {
+  width: fit-content !important;
 }
 @media (min-width: 1025px) and (max-width: 1366px) {
   .brand-img {
@@ -2232,7 +2245,7 @@ body #tawkchat-container {
 }
 .content__gdpr p {
   font-size: 11px !important;
-  font-family: jostregular !important;
+  font-family: robtoregular !important;
   margin: 0;
 }
 .m-address a {

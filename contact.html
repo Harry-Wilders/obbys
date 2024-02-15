@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Obby’s Venures - What We Do</title>
+    <title>Obby’s Ventures -- Contact Us </title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
@@ -26,7 +26,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-
+    <script defer src="./assets/js/quote.js"></script>
 
 </head>
 
@@ -71,6 +71,7 @@
                 </div>
 
             </div>
+        </div>
         </div>
 
         <div class="header-bottom">
@@ -139,14 +140,16 @@
 
                 </nav>
 
-                <div class="btn btn-primary">Get A Quote</>
+                <div class="btn btn-primary">Get A Quote</s>
 
                 </div>
             </div>
+        </div>
+        </div>
 
     </header>
     <main>
-        <article>
+        <article style="overflow-x: hidden;">
 
             <section id="home">
                 <div class="container">
@@ -163,28 +166,30 @@
                                 <h2 class="contact__heading" style="margin-bottom:0">Request For Quotation</h2>
                                 <p style="margin-bottom:0">Fill the form below for a free no obligation quotation
                                 </p>
+
+
                             </div>
                         </div>
-                        <form class="form-horizontal" id="contact_form1" act>
+                        <form class="form-horizontal" id="contact_form1">
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="name">Name</label>
-                                        <input id="name" type="text" class="form-control" name="name" maxlength="100"
-                                            autocomplete="off">
+                                        <label for="clientName">Name</label>
+                                        <input id="clientName" type="text" class="form-control" name="client_name"
+                                            maxlength="100" autocomplete="off">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="designation">Designation</label>
-                                        <input id="designation" type="text" name="designation" class="form-control"
+                                        <label for="designationID">Designation</label>
+                                        <input id="designationID" type="text" name="designation" class="form-control"
                                             autocomplete="off" maxlength="100">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="orgname">Organization Name</label>
-                                        <input id="orgname" type="text" name="orgname" class="form-control"
+                                        <label for="orgName">Organization Name</label>
+                                        <input id="orgName" type="text" name="orgname" class="form-control"
                                             autocomplete="off" maxlength="100">
                                     </div>
                                 </div>
@@ -192,8 +197,8 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="country">Country</label>
-                                        <select id="country" name="country" class="form-control">
+                                        <label for="countryID">Country</label>
+                                        <select id="countryID" name="country" class="form-control">
                                             <option value="" selected="selected">Select</option>
                                             <option value="Kenya">Kenya</option>
                                             <option value="Rwanda">Rwanda</option>
@@ -207,14 +212,14 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="emailid">Email Address</label>
-                                        <input id="emailid" type="email" name="emailid" class="form-control"
-                                            autocomplete="off" maxlength="100">
+                                        <input id="emailid" type="email" name="email" class="form-control"
+                                            autocomplete="off" maxlength="255">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="phone">Phone No.</label>
-                                        <input id="phone" type="text" name="phone" class="form-control"
+                                        <label for="phoneID">Phone No.</label>
+                                        <input id="phoneID" type="tel" name="phone_number" class="form-control"
                                             autocomplete="off" maxlength="100">
                                     </div>
                                 </div>
@@ -223,98 +228,100 @@
                                 <div class="col-md-4">
                                     <h3>Your Status</h3>
                                     <div class="form-check">
-                                        <input name="status" type="radio" id="radio1" value="Buyer"
+                                        <input name="status" type="radio" id="buyerRadio" value="Buyer"
                                             class="form-check-input">
-                                        <label class="form-check-label" for="radio1">Buyer</label>
+                                        <label class="form-check-label" for="buyerRadio">Buyer</label>
                                     </div>
                                     <div class="form-check">
-                                        <input name="status" type="radio" id="radio2" value="Influencer"
+                                        <input name="status" type="radio" id="influencerRadio" value="Influencer"
                                             class="form-check-input">
-                                        <label class="form-check-label" for="radio2">Influencer</label>
+                                        <label class="form-check-label" for="influencerRadio">Influencer</label>
                                     </div>
                                     <div class="form-check">
-                                        <input name="status" type="radio" id="radio3" value="Decision Maker"
+                                        <input name="status" type="radio" id="decisionRadio" value="Decision Maker"
                                             class="form-check-input">
-                                        <label class="form-check-label" for="radio3">Decision Maker</label>
+                                        <label class="form-check-label" for="decisionRadio">Decision Maker</label>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <h3>I AM INTERESTED IN</h3>
                                     <h3>Event Planning and Management</h3>
-                                    <div class="form-check">
-                                        <input type="checkbox" id="rwd" name="interest[]"
-                                            value="Ecommerce Shopping Campaigns" class="form-check-input">
-                                        <label class="form-check-label" for="rwd">Stages and Backdrops</label>
-                                        <input type="checkbox" id="rwd" name="interest[]"
-                                            value="Ecommerce Shopping Campaigns" class="form-check-input">
-                                        <label class="form-check-label" for="rwd">Hybrid Events(Live &amp;
+                                    <div class="form-check" id="event">
+                                        <input type="checkbox" id="rwd1" name="event[]" value="Stages and Backdrops"
+                                            class="form-check-input">
+                                        <label class="form-check-label" for="rwd1">Stages and Backdrops</label>
+
+                                        <input type="checkbox" id="rwd2" name="event[]" value="Hybrid Events"
+                                            class="form-check-input">
+                                        <label class="form-check-label" for="rwd2">Hybrid Events(Live &amp;
                                             Virtual)</label>
-                                        <input type="checkbox" id="rwd" name="interest[]"
-                                            value="Ecommerce Shopping Campaigns" class="form-check-input">
-                                        <label class="form-check-label" for="rwd">Virtual Event Production
-                                        </label>
-                                        <input type="checkbox" id="rwd" name="interest[]"
-                                            value="Ecommerce Shopping Campaigns" class="form-check-input">
-                                        <label class="form-check-label" for="rwd">Interactive/ Digital Production
-                                        </label>
+
+                                        <input type="checkbox" id="rwd3" name="event[]" value="Virtual Event Production"
+                                            class="form-check-input">
+                                        <label class="form-check-label" for="rwd3">Virtual Event Production</label>
+
+                                        <input type="checkbox" id="rwd4" name="event[]"
+                                            value="Interactive Digital Production" class="form-check-input">
+                                        <label class="form-check-label" for="rwd4">Interactive Digital
+                                            Production</label>
                                     </div>
+
                                     <h3 class="mt-3">Technical Production</h3>
-                                    <div class="form-check">
-                                        <input type="checkbox" id="rwd" name="interest[]"
-                                            value="Ecommerce Shopping Campaigns" class="form-check-input">
+                                    <div class="form-check" id="technical">
+                                        <input type="checkbox" id="rwd" name="technical[]" value="Audiovisual Services"
+                                            class="form-check-input">
                                         <label class="form-check-label" for="rwd">Audiovisual Services</label>
-                                        <input type="checkbox" id="rwd" name="interest[]"
-                                            value="Ecommerce Shopping Campaigns" class="form-check-input">
+
+                                        <input type="checkbox" id="rwd" name="technical[]" value="Filming"
+                                            class="form-check-input">
                                         <label class="form-check-label" for="rwd">Filming</label>
-                                        <input type="checkbox" id="rwd" name="interest[]"
-                                            value="Ecommerce Shopping Campaigns" class="form-check-input">
-                                        <label class="form-check-label" for="rwd">Live Streaming /
-                                            Broadcast Services
-                                        </label>
-                                        <input type="checkbox" id="rwd" name="interest[]"
-                                            value="Ecommerce Shopping Campaigns" class="form-check-input">
+
+                                        <input type="checkbox" id="rwd" name="technical[]"
+                                            value="Live Streaming and Broadcast Services" class="form-check-input">
+                                        <label class="form-check-label" for="rwd">Live Streaming &amp; Broadcast
+                                            Services</label>
+
+                                        <input type="checkbox" id="rwd" name="technical[]"
+                                            value="Recording and Editing Digital Content" class="form-check-input">
                                         <label class="form-check-label" for="rwd">Recording and Editing Digital
-                                            Content
+                                            Content</label>
 
-                                            <input type="checkbox" id="rwd" name="interest[]"
-                                                value="Ecommerce Shopping Campaigns" class="form-check-input">
-                                            <label class="form-check-label" for="rwd">Archiving of Event Digital
-                                                Content
-
-
-                                            </label>
+                                        <input type="checkbox" id="rwd" name="technical[]"
+                                            value="Archiving of Event Digital Content" class="form-check-input">
+                                        <label class="form-check-label" for="rwd">Archiving of Event Digital
+                                            Content</label>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <h3>&nbsp;</h3>
                                     <h3>Others Solutions</h3>
-                                    <div class="form-check">
-                                        <input type="checkbox" id="cem" name="interest[]"
-                                            value="Ecommerce Website Design" class="form-check-input">
-                                        <label class="form-check-label" for="cem">Ground Transportation
+                                    <div class="form-check" id="others">
+                                        <input type="checkbox" id="cem1" name="others[]"
+                                            value="Ground Transportation Services" class="form-check-input">
+                                        <label class="form-check-label" for="cem1">Ground Transportation
                                             Services</label>
-                                        <input type="checkbox" id="cem" name="interest[]"
-                                            value="Ecommerce Website Design" class="form-check-input">
-                                        <label class="form-check-label" for="cem">Equipment Rentals</label>
-                                        <input type="checkbox" id="cem" name="interest[]"
-                                            value="Ecommerce Website Design" class="form-check-input">
-                                        <label class="form-check-label" for="cem">Equipment Sale</label>
-                                        <input type="checkbox" id="cem" name="interest[]"
-                                            value="Ecommerce Website Design" class="form-check-input">
-                                        <label class="form-check-label" for="cem">Rigging & Truss Services</label>
-                                        <input type="checkbox" id="cem" name="interest[]"
-                                            value="Ecommerce Website Design" class="form-check-input">
-                                        <label class="form-check-label" for="cem">Go Green Initiatives</label>
 
+                                        <input type="checkbox" id="cem2" name="others[]" value="Equipment Rentals"
+                                            class="form-check-input">
+                                        <label class="form-check-label" for="cem2">Equipment Rentals</label>
+
+                                        <input type="checkbox" id="cem3" name="others[]" value="Equipment Sale"
+                                            class="form-check-input">
+                                        <label class="form-check-label" for="cem3">Equipment Sale</label>
+
+                                        <input type="checkbox" id="cem4" name="others[]"
+                                            value="Rigging & Truss Services" class="form-check-input">
+                                        <label class="form-check-label" for="cem4">Rigging & Truss Services</label>
+
+                                        <input type="checkbox" id="cem5" name="others[]" value="Go Green Initiatives"
+                                            class="form-check-input">
+                                        <label class="form-check-label" for="cem5">Go Green Initiatives</label>
                                     </div>
-
                                 </div>
                             </div>
                             <div class="row mb-0">
                                 <div class="col-md-12">
                                     <div class="form-group mt-2">
-                                        <label for="comments" class="h5 mt-4">Tell us
-                                            more</label>
+                                        <label for="comments" class="h5 mt-4">Tell us more</label>
                                         <textarea class="form-control" id="comments" name="comment"></textarea>
                                     </div>
                                 </div>
@@ -322,45 +329,43 @@
                             <div class="container">
                                 <div class="row mb-3">
                                     <div class="col-md-12">
-                                        <div class="form-check">
-                                            <label class="left agree-emails">
-                                                I agree to receiving special offer and marketing emails updates from
-                                                Obby’s Ventures
-                                            </label>
-                                            <div class="form-check-inline">
-                                                <label for="radio" class="form-check-label">
-                                                    <input name="radio" type="radio" id="radio" checked="checked"
-                                                        value="1" class="form-check-input accept-conditions">
-                                                    <span class="agree-span">I agree</span>
-                                                </label>
-                                                <label for="radio41" class="form-check-label">
-                                                    <input name="radio" type="radio" id="radio41" value="1"
-                                                        class="form-check-input">
-                                                    <span class="agree-span">I disagree</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form-check right">
-                                            <label for="checkbox2" class="fnone">
-                                                <input type="checkbox" id="checkbox2" name="agree" value="1"
-                                                    checked="checked" class="form-check-input">
-                                                <span class="label-text">I have read and agree to Obby’s Ventures <a
-                                                        href="#" target="_blank" rel="noreferrer">Privacy
-                                                        Policy</a></span>
-                                            </label>
-                                        </div>
+                                        <p class="left agree-emails">I agree to receiving special offer and marketing
+                                            emails updates
+                                            from Agency
+                                            <label for="agreeRadio"><span class="agree-span">I agree</span></label>
+                                            <input name="agree" type="radio" id="agreeRadio" value="1"
+                                                class="form-check-input accept-conditions">
+
+                                            <label for="disagreeRadio"><span class="agree-span"> I
+                                                    disagree</span></label>
+                                            <input name="agree" type="radio" id="disagreeRadio" value="2"
+                                                class="form-check-input">
+                                        </p>
+                                    </div>
+                                    <div class="form-check right">
+                                        <label for="privacyCheckbox" class="fnone">
+                                            <input type="checkbox" id="privacyCheckbox" name="privacy" value="agreed"
+                                                checked="checked" class="form-check-input">
+                                            <div class="privacy-check"><span class="label-text mt-2">I have read and
+                                                    agree to Obby’s
+                                                    Ventures
+                                                    <a href="#" target="_blank" rel="noreferrer"
+                                                        class="privacy-link">Privacy
+                                                        Policy</a></span></div>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
-
                             <div class="row">
-                                <div class="col-md-12 text-center">
-                                    <button type="button" class="btn btn-primary"
-                                        onclick="validate_enquiry('contact_form1')"><span>Submit</span></button>
+                                <div class=" text-center">
+                                    <button type="submit" class="btn btn-danger"><span>Submit</span></>
+
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="form-group text-center">
-                                        <p class="error" style="color:#e10b0b; "></p>
+                                <div class="col-md-6 m-2 mx-auto">
+                                    <div class="form-group text-center bg-info">
+
+                                        <div class="error" style="color:#e10b0b;" id="error-container">
+                                        </div>
                                         <span id="processing1"></span>
                                     </div>
                                 </div>
@@ -368,8 +373,8 @@
                         </form>
                     </div>
                 </div>
-
             </section>
+
 
 
 
@@ -421,7 +426,7 @@
                         <li class="contact-item">
                             <ion-icon name="mail-outline"></ion-icon>
 
-                            <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
+                            <a href="#" class="contact-link">info.Obby's Ventures.com</a>
                         </li>
 
                         <li class="contact-item">

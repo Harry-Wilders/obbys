@@ -24,6 +24,28 @@ const navToggleEvent = function (elem) {
 navToggleEvent(navElemArr);
 navToggleEvent(navLinks);
 
+// Function to remove the 'active' class from all navbar links
+const removeActiveClass = () => {
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+  });
+};
+
+// Event listener for each navbar link
+navLinks.forEach((link) => {
+  link.addEventListener("click", function () {
+    // Remove 'active' class from all links
+    removeActiveClass();
+
+    // Add 'active' class to the clicked link
+    this.classList.add("active");
+
+    // Close the navbar (if it's open)
+    navbar.classList.remove("active");
+    overlay.classList.remove("active");
+  });
+});
+
 /**
  * header sticky & go to top
  */
@@ -43,18 +65,6 @@ window.addEventListener("scroll", function () {
     goTopBtn.classList.remove("active");
   }
 });
-
-const root = document.documentElement;
-const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue(
-  "--marquee-elements-displayed"
-);
-const marqueeContent = document.querySelector("ul.marquee-content");
-
-root.style.setProperty("--marquee-elements", marqueeContent.children.length);
-
-for (let i = 0; i < marqueeElementsDisplayed; i++) {
-  marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
-}
 
 // Testimonial
 
