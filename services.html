@@ -27,7 +27,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 
-
+    <script defer src="./assets/js/quote.js"></script>
 </head>
 
 <body class="about-body" id="top">
@@ -350,7 +350,7 @@
                                             <img src="./assets/images/car/onboard.jpg" class="card-img-top"
                                                 style="object-fit: cover; height: 300px;" alt="...">
                                             <div class="card-body">
-                                                <h5 class="card-title mt-3">Onboard Tracking</h5>
+                                                <h5 class="mt-3 text-secondary">Onboard Tracking</h5>
                                                 <p class="card-text">Our service provides real-time monitoring of each
                                                     vehicle's location through GPS technology. This allows you to track
                                                     your fleet's performance and optimize your routes and schedules.</p>
@@ -362,7 +362,7 @@
                                             <img src="./assets/images/car/guide.jpg" class="card-img-top"
                                                 style="object-fit: cover; height: 300px;" alt="...">
                                             <div class="card-body">
-                                                <h5 class="card-title mt-3">Guide</h5>
+                                                <h5 class="mt-3 text-secondary">Guide</h5>
                                                 <p class="card-text">We have travel guides that help you plan your
                                                     perfect trip. Whether you want to explore a new city, or enjoy a
                                                     relaxing getaway, we have the right guide for you.
@@ -375,7 +375,7 @@
                                             <img src="./assets/images/car/water.jpg" class="card-img-top"
                                                 style="object-fit: cover; height: 300px;" alt="...">
                                             <div class="card-body">
-                                                <h5 class="card-title">Bottled Water and Snacks</h5>
+                                                <h5 class="mt-3 text-secondary">Bottled Water and Snacks</h5>
                                                 <p class="card-text">You can relax and enjoy the journey without
                                                     worrying about having munchies or thirst. We have a selection of
                                                     snacks
@@ -396,7 +396,7 @@
                                 <h4 class="card-title" style="font-size: 1.8rem;  color: #c16228;">MEDIA CENTRE AND
                                     CONTROL SECTION
                                 </h4>
-                                <h5 class="h5">1. VIRTUAL EVENT PRODUCTION</h5>
+                                <h5 class="text-secondary">1. VIRTUAL EVENT PRODUCTION</h5>
                                 <p class="card-text" style="font-size: 1rem; margin-top: 10px">
                                     We have state-of-the-art studio for Audiovisual production. where recording, editing
                                     and producing audio related
@@ -406,7 +406,7 @@
                                     that can be integrated for video
                                     production of material for commercials, documentaries, programmes etc.
                                 </p>
-                                <h5 class="h5">2. INTERACTIVE/DIGITAL PRODUCTION</h5>
+                                <h5 class="text-secondary">2. INTERACTIVE/DIGITAL PRODUCTION</h5>
 
                                 <p class="card-text" style="font-size: 1rem; margin-top: 10px">We offer equipment that
                                     is compatible together with man power capable to deliver services in areas such as
@@ -428,24 +428,29 @@
                                 <h4 class="card-title" style="font-size: 1.6rem; color: #c16228; ">GO
                                     GREEN
                                 </h4>
-                                <h5 class="h5">1. PAPERLESS GREEN COMMUNICATIONS </h5>
-                                <p class="card-text" style="font-size: 1rem; margin-top: 10px">Go digital; minimize use
+                                <h5 class="text-secondary">1. PAPERLESS GREEN COMMUNICATIONS </h5>
+                                <p class="card-text text-success" style="font-size: 1rem; margin-top: 10px">Go digital;
+                                    minimize use
                                     of paper/printed materials by prioritizing digital communications. Use an event app
                                     and
                                     electronic billboards screens to communicate vital tournament information</p>
 
-                                <h5 class="h5">2. GO GREEN</h5>
-                                <p class="card-text" style="font-size: 1rem; margin-top: 10px">We provide recyclable
+                                <h5 class="text-secondary">2. GO GREEN</h5>
+                                <p class="card-text text-success" style="font-size: 1rem; margin-top: 10px">We provide
+                                    recyclable
                                     carry-away boxes for guests and staff to avoid food wastage
                                     We avoid the use of single-use plastic packaging.
                                     We use only biodegradable cups and plates thus eliminate single use plastics
                                 </p>
-                                <h5 class="h5">3. NO SINGLE - USE PLASTIC IN LINE WITH SUSTAINABILITY GUIDELINES</h5>
-                                <ul>
-                                    <li style="list-style-type: circle;">We will have water dispensers around the
+                                <h5 class="text-secondary">3. NO SINGLE - USE PLASTIC IN LINE WITH SUSTAINABILITY
+                                    GUIDELINES</h5>
+                                <ul class="text-success ps-2">
+                                    <li style="list-style-type: circle;" class="ps-2">We will have water dispensers
+                                        around the
                                         course, avoiding the use of single use
                                         plastic water bottles.</li>
-                                    <li style="list-style-type: circle;">We will offer drinks in recycled paper cups
+                                    <li style="list-style-type: circle;" class="ps-2">We will offer drinks in recycled
+                                        paper cups
                                     </li>
                                 </ul>
                             </div>
@@ -549,36 +554,38 @@
 
             </section>
 
-
-            <section>
+            <section style="padding-top: 20px;">
                 <div class="section ocls" style="background:#505050" id="say_form">
                     <div class="container">
                         <div class="row justify-content-center mb-0">
                             <div class="col-md-12 text-center">
                                 <h2 class="contact__heading" style="margin-bottom:0">Request For Quotation</h2>
-                                <p style="margin-bottom:0">Fill the form below for a free no obligation quotation</p>
+                                <p style="margin-bottom:0">Fill the form below for a free no obligation quotation
+                                </p>
+
+
                             </div>
                         </div>
-                        <form class="form-horizontal" id="contact_form1" act>
+                        <form class="form-horizontal" id="contact_form1">
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="name">Name</label>
-                                        <input id="name" type="text" class="form-control" name="name" maxlength="100"
-                                            autocomplete="off">
+                                        <label for="clientName">Name</label>
+                                        <input id="clientName" type="text" class="form-control" name="client_name"
+                                            maxlength="100" autocomplete="off">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="designation">Designation</label>
-                                        <input id="designation" type="text" name="designation" class="form-control"
+                                        <label for="designationID">Designation</label>
+                                        <input id="designationID" type="text" name="designation" class="form-control"
                                             autocomplete="off" maxlength="100">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="orgname">Organization Name</label>
-                                        <input id="orgname" type="text" name="orgname" class="form-control"
+                                        <label for="orgName">Organization Name</label>
+                                        <input id="orgName" type="text" name="orgname" class="form-control"
                                             autocomplete="off" maxlength="100">
                                     </div>
                                 </div>
@@ -586,8 +593,8 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="country">Country</label>
-                                        <select id="country" name="country" class="form-control">
+                                        <label for="countryID">Country</label>
+                                        <select id="countryID" name="country" class="form-control">
                                             <option value="" selected="selected">Select</option>
                                             <option value="Kenya">Kenya</option>
                                             <option value="Rwanda">Rwanda</option>
@@ -601,14 +608,14 @@
                                 <div class="col-md-4">
                                     <div class="form-group">
                                         <label for="emailid">Email Address</label>
-                                        <input id="emailid" type="email" name="emailid" class="form-control"
-                                            autocomplete="off" maxlength="100">
+                                        <input id="emailid" type="email" name="email" class="form-control"
+                                            autocomplete="off" maxlength="255">
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="form-group">
-                                        <label for="phone">Phone No.</label>
-                                        <input id="phone" type="text" name="phone" class="form-control"
+                                        <label for="phoneID">Phone No.</label>
+                                        <input id="phoneID" type="tel" name="phone_number" class="form-control"
                                             autocomplete="off" maxlength="100">
                                     </div>
                                 </div>
@@ -617,95 +624,100 @@
                                 <div class="col-md-4">
                                     <h3>Your Status</h3>
                                     <div class="form-check">
-                                        <input name="status" type="radio" id="radio1" value="Buyer"
+                                        <input name="status" type="radio" id="buyerRadio" value="Buyer"
                                             class="form-check-input">
-                                        <label class="form-check-label" for="radio1">Buyer</label>
+                                        <label class="form-check-label" for="buyerRadio">Buyer</label>
                                     </div>
                                     <div class="form-check">
-                                        <input name="status" type="radio" id="radio2" value="Influencer"
+                                        <input name="status" type="radio" id="influencerRadio" value="Influencer"
                                             class="form-check-input">
-                                        <label class="form-check-label" for="radio2">Influencer</label>
+                                        <label class="form-check-label" for="influencerRadio">Influencer</label>
                                     </div>
                                     <div class="form-check">
-                                        <input name="status" type="radio" id="radio3" value="Decision Maker"
+                                        <input name="status" type="radio" id="decisionRadio" value="Decision Maker"
                                             class="form-check-input">
-                                        <label class="form-check-label" for="radio3">Decision Maker</label>
+                                        <label class="form-check-label" for="decisionRadio">Decision Maker</label>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <h3>I AM INTERESTED IN</h3>
                                     <h3>Event Planning and Management</h3>
-                                    <div class="form-check">
-                                        <input type="checkbox" id="rwd" name="interest[]"
-                                            value="Ecommerce Shopping Campaigns" class="form-check-input">
-                                        <label class="form-check-label" for="rwd">Stages and Backdrops</label>
-                                        <input type="checkbox" id="rwd" name="interest[]"
-                                            value="Ecommerce Shopping Campaigns" class="form-check-input">
-                                        <label class="form-check-label" for="rwd">Hybrid Events(Live &amp;
+                                    <div class="form-check" id="event">
+                                        <input type="checkbox" id="rwd1" name="event[]" value="Stages and Backdrops"
+                                            class="form-check-input">
+                                        <label class="form-check-label" for="rwd1">Stages and Backdrops</label>
+
+                                        <input type="checkbox" id="rwd2" name="event[]" value="Hybrid Events"
+                                            class="form-check-input">
+                                        <label class="form-check-label" for="rwd2">Hybrid Events(Live &amp;
                                             Virtual)</label>
-                                        <input type="checkbox" id="rwd" name="interest[]"
-                                            value="Ecommerce Shopping Campaigns" class="form-check-input">
-                                        <label class="form-check-label" for="rwd">Virtual Event Production
-                                        </label>
-                                        <input type="checkbox" id="rwd" name="interest[]"
-                                            value="Ecommerce Shopping Campaigns" class="form-check-input">
-                                        <label class="form-check-label" for="rwd">Interactive/ Digital Production
-                                        </label>
+
+                                        <input type="checkbox" id="rwd3" name="event[]" value="Virtual Event Production"
+                                            class="form-check-input">
+                                        <label class="form-check-label" for="rwd3">Virtual Event Production</label>
+
+                                        <input type="checkbox" id="rwd4" name="event[]"
+                                            value="Interactive Digital Production" class="form-check-input">
+                                        <label class="form-check-label" for="rwd4">Interactive Digital
+                                            Production</label>
                                     </div>
+
                                     <h3 class="mt-3">Technical Production</h3>
-                                    <div class="form-check">
-                                        <input type="checkbox" id="rwd" name="interest[]"
-                                            value="Ecommerce Shopping Campaigns" class="form-check-input">
+                                    <div class="form-check" id="technical">
+                                        <input type="checkbox" id="rwd" name="technical[]" value="Audiovisual Services"
+                                            class="form-check-input">
                                         <label class="form-check-label" for="rwd">Audiovisual Services</label>
-                                        <input type="checkbox" id="rwd" name="interest[]"
-                                            value="Ecommerce Shopping Campaigns" class="form-check-input">
+
+                                        <input type="checkbox" id="rwd" name="technical[]" value="Filming"
+                                            class="form-check-input">
                                         <label class="form-check-label" for="rwd">Filming</label>
-                                        <input type="checkbox" id="rwd" name="interest[]"
-                                            value="Ecommerce Shopping Campaigns" class="form-check-input">
-                                        <label class="form-check-label" for="rwd">Live Streaming /
-                                            Broadcast Services
-                                        </label>
-                                        <input type="checkbox" id="rwd" name="interest[]"
-                                            value="Ecommerce Shopping Campaigns" class="form-check-input">
-                                        <label class="form-check-label" for="rwd">Recording and Editing Digital Content
 
-                                            <input type="checkbox" id="rwd" name="interest[]"
-                                                value="Ecommerce Shopping Campaigns" class="form-check-input">
-                                            <label class="form-check-label" for="rwd">Archiving of Event Digital Content
+                                        <input type="checkbox" id="rwd" name="technical[]"
+                                            value="Live Streaming and Broadcast Services" class="form-check-input">
+                                        <label class="form-check-label" for="rwd">Live Streaming &amp; Broadcast
+                                            Services</label>
 
+                                        <input type="checkbox" id="rwd" name="technical[]"
+                                            value="Recording and Editing Digital Content" class="form-check-input">
+                                        <label class="form-check-label" for="rwd">Recording and Editing Digital
+                                            Content</label>
 
-                                            </label>
+                                        <input type="checkbox" id="rwd" name="technical[]"
+                                            value="Archiving of Event Digital Content" class="form-check-input">
+                                        <label class="form-check-label" for="rwd">Archiving of Event Digital
+                                            Content</label>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
-                                    <h3>&nbsp;</h3>
                                     <h3>Others Solutions</h3>
-                                    <div class="form-check">
-                                        <input type="checkbox" id="cem" name="interest[]"
-                                            value="Ecommerce Website Design" class="form-check-input">
-                                        <label class="form-check-label" for="cem">Ground Transportation Services</label>
-                                        <input type="checkbox" id="cem" name="interest[]"
-                                            value="Ecommerce Website Design" class="form-check-input">
-                                        <label class="form-check-label" for="cem">Equipment Rentals</label>
-                                        <input type="checkbox" id="cem" name="interest[]"
-                                            value="Ecommerce Website Design" class="form-check-input">
-                                        <label class="form-check-label" for="cem">Equipment Sale</label>
-                                        <input type="checkbox" id="cem" name="interest[]"
-                                            value="Ecommerce Website Design" class="form-check-input">
-                                        <label class="form-check-label" for="cem">Rigging & Truss Services</label>
-                                        <input type="checkbox" id="cem" name="interest[]"
-                                            value="Ecommerce Website Design" class="form-check-input">
-                                        <label class="form-check-label" for="cem">Go Green Initiatives</label>
+                                    <div class="form-check" id="others">
+                                        <input type="checkbox" id="cem1" name="others[]"
+                                            value="Ground Transportation Services" class="form-check-input">
+                                        <label class="form-check-label" for="cem1">Ground Transportation
+                                            Services</label>
 
+                                        <input type="checkbox" id="cem2" name="others[]" value="Equipment Rentals"
+                                            class="form-check-input">
+                                        <label class="form-check-label" for="cem2">Equipment Rentals</label>
+
+                                        <input type="checkbox" id="cem3" name="others[]" value="Equipment Sale"
+                                            class="form-check-input">
+                                        <label class="form-check-label" for="cem3">Equipment Sale</label>
+
+                                        <input type="checkbox" id="cem4" name="others[]"
+                                            value="Rigging & Truss Services" class="form-check-input">
+                                        <label class="form-check-label" for="cem4">Rigging & Truss Services</label>
+
+                                        <input type="checkbox" id="cem5" name="others[]" value="Go Green Initiatives"
+                                            class="form-check-input">
+                                        <label class="form-check-label" for="cem5">Go Green Initiatives</label>
                                     </div>
-
                                 </div>
                             </div>
                             <div class="row mb-0">
                                 <div class="col-md-12">
                                     <div class="form-group mt-2">
-                                        <label for="comments" class="h5 mt-4">Tell us
-                                            more</label>
+                                        <label for="comments" class="h5 mt-4">Tell us more</label>
                                         <textarea class="form-control" id="comments" name="comment"></textarea>
                                     </div>
                                 </div>
@@ -713,45 +725,43 @@
                             <div class="container">
                                 <div class="row mb-3">
                                     <div class="col-md-12">
-                                        <div class="form-check">
-                                            <label class="left agree-emails">
-                                                I agree to receiving special offer and marketing emails updates from
-                                                Agency
-                                            </label>
-                                            <div class="form-check-inline">
-                                                <label for="radio" class="form-check-label">
-                                                    <input name="radio" type="radio" id="radio" checked="checked"
-                                                        value="1" class="form-check-input accept-conditions">
-                                                    <span class="agree-span">I agree</span>
-                                                </label>
-                                                <label for="radio41" class="form-check-label">
-                                                    <input name="radio" type="radio" id="radio41" value="1"
-                                                        class="form-check-input">
-                                                    <span class="agree-span">I disagree</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form-check right">
-                                            <label for="checkbox2" class="fnone">
-                                                <input type="checkbox" id="checkbox2" name="agree" value="1"
-                                                    checked="checked" class="form-check-input">
-                                                <span class="label-text">I have read and agree to Agency Africa <a
-                                                        href="https://www.agencyafrica.com/privacy-policy.html"
-                                                        target="_blank" rel="noreferrer">Privacy Policy</a></span>
-                                            </label>
-                                        </div>
+                                        <p class="left agree-emails">I agree to receiving special offer and marketing
+                                            emails updates
+                                            from Agency
+                                            <label for="agreeRadio"><span class="agree-span">I agree</span></label>
+                                            <input name="agree" type="radio" id="agreeRadio" value="1"
+                                                class="form-check-input accept-conditions">
+
+                                            <label for="disagreeRadio"><span class="agree-span"> I
+                                                    disagree</span></label>
+                                            <input name="agree" type="radio" id="disagreeRadio" value="2"
+                                                class="form-check-input">
+                                        </p>
+                                    </div>
+                                    <div class="form-check right">
+                                        <label for="privacyCheckbox" class="fnone">
+                                            <input type="checkbox" id="privacyCheckbox" name="privacy" value="agreed"
+                                                checked="checked" class="form-check-input">
+                                            <div class="privacy-check"><span class="label-text mt-2">I have read and
+                                                    agree to Obby’s
+                                                    Ventures
+                                                    <a href="#" target="_blank" rel="noreferrer"
+                                                        class="privacy-link">Privacy
+                                                        Policy</a></span></div>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
-
                             <div class="row">
-                                <div class="col-md-12 text-center">
-                                    <button type="button" class="btn btn-primary"
-                                        onclick="validate_enquiry('contact_form1')"><span>Submit</span></button>
+                                <div class=" text-center">
+                                    <button type="submit" class="btn btn-danger"><span>Submit</span></>
+
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="form-group text-center">
-                                        <p class="error" style="color:#e10b0b; "></p>
+                                <div class="col-md-6 m-2 mx-auto">
+                                    <div class="form-group text-center bg-info">
+
+                                        <div class="error" style="color:#e10b0b;" id="error-container">
+                                        </div>
                                         <span id="processing1"></span>
                                     </div>
                                 </div>
@@ -759,7 +769,6 @@
                         </form>
                     </div>
                 </div>
-
             </section>
             </section>
 

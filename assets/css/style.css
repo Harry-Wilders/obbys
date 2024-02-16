@@ -297,6 +297,9 @@ article {
   align-items: center;
 }
 
+#content {
+  display: none;
+}
 /*-----------------------------------*\
  * #HEADER
 \*-----------------------------------*/
@@ -606,7 +609,6 @@ article {
   animation: spin 0.5s linear infinite;
 }
 
-<<<<<<< HEAD
 .privacy-link {
   color: #ecb7b7;
 }
@@ -614,8 +616,6 @@ article {
   color: #fecf12;
 }
 
-=======
->>>>>>> 06a37cd1f34640e6d33a49198badb9192eda7f1d
 @keyframes spin {
   100% {
     transform: rotate(360deg);
@@ -810,14 +810,7 @@ article {
   border-radius: 5px !important;
   border: 5px solid #a8c4c3 !important;
 }
-<<<<<<< HEAD
-.card-cars {
-  
-}
-=======
->>>>>>> 06a37cd1f34640e6d33a49198badb9192eda7f1d
 
-#event-planning,
 #media-control {
   background: linear-gradient(to right, #b6f2ed 0%, transparent 100%);
   padding: 16px;
@@ -2210,7 +2203,7 @@ a:hover {
   background: linear-gradient(to right, #ef9047, #fca00b);
   /* Adjust the color codes to your preferred shades of red */
   color: #2f0500 !important;
-  padding: 10px; /* Adjust padding as needed */
+  /* Adjust padding as needed */
   border: 1px solid #cc0000; /* Border color matching the darkest shade */
 
   text-align: start;
