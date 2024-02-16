@@ -606,6 +606,7 @@ article {
   animation: spin 0.5s linear infinite;
 }
 
+<<<<<<< HEAD
 .privacy-link {
   color: #ecb7b7;
 }
@@ -613,6 +614,8 @@ article {
   color: #fecf12;
 }
 
+=======
+>>>>>>> 06a37cd1f34640e6d33a49198badb9192eda7f1d
 @keyframes spin {
   100% {
     transform: rotate(360deg);
@@ -807,9 +810,12 @@ article {
   border-radius: 5px !important;
   border: 5px solid #a8c4c3 !important;
 }
+<<<<<<< HEAD
 .card-cars {
   
 }
+=======
+>>>>>>> 06a37cd1f34640e6d33a49198badb9192eda7f1d
 
 #event-planning,
 #media-control {
