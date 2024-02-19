@@ -43,7 +43,7 @@
 
     <script defer src="./assets/js/contact.js"></script>
     <script defer src="./assets/js/marquee.js"></script>
-
+    <script defer src="./assets/js/testimonial.js"></script>
 
 
 
@@ -339,7 +339,7 @@
 
 
                                     <p class="card-subtitle">
-                                        <a href="#">For all your audio needs</a>
+                                        <a href="#">Hire or Buy equipments</a>
                                     </p>
 
                                     <h3 class="h3  card-title card-reset"
@@ -363,7 +363,7 @@
                             <div class="popular-card">
 
                                 <figure class="card-img">
-                                    <img src="./assets/images/photos/lights.jpg" alt="Burj khalifa, dubai"
+                                    <img src="./assets/images/photos/stage.jpg" alt="Burj khalifa, dubai"
                                         loading="lazy">
                                 </figure>
 
@@ -372,7 +372,7 @@
 
 
                                     <p class="card-subtitle">
-                                        <a href="#">Light it up </a>
+                                        <a href="#">Set the stage </a>
                                     </p>
 
                                     <h3 class="h3  card-title card-reset"
@@ -404,7 +404,7 @@
 
 
                                     <p class="card-subtitle">
-                                        <a href="#">Amazing audio-visual experiences</a>
+                                        <a href="#">Live or Virtual Event</a>
                                     </p>
 
                                     <h3 class="h3  card-title card-reset"
@@ -720,7 +720,7 @@
                                 </div>
                                 <div class="form-group" id="phoneNumber-group">
                                     <label for="Phone Number">Phone Number</label>
-                                    <input type="number" id="phoneNumber" name='phone_number'
+                                    <input type="tel" id="phoneNumber" name='phone_number'
                                         placeholder="Your Phone Number" autocomplete="off" maxlength="20" required />
                                 </div>
                                 <div class="form-group">
@@ -744,7 +744,7 @@
 
                     </div>
                 </div>
-                </>
+                </s>
 
                 <div class="card-learn-button">
                     <a href="./contact.html" class="btn btn-danger">
@@ -945,27 +945,7 @@
   -->
     <script src="./assets/js/script.js"></script>
     <!-- JavaScript to handle form submission -->
-    <script>
-        document.getElementById('myForm').addEventListener('submit', function (event) {
-            event.preventDefault(); // Prevent the default form submission
 
-            // Use AJAX to submit the form
-            var formData = new FormData(this);
-
-            fetch(this.action, {
-                method: 'POST',
-                body: formData,
-            })
-                .then(response => response.json())
-                .then(data => {
-                    // Display errors in your HTML
-                    document.getElementById('errorContainer').innerHTML = data.errors;
-                })
-                .catch(error => {
-                    console.error('Error:', error);
-                });
-        });
-    </script>
 
     <!-- 
     - ionicon link

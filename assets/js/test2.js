@@ -36,31 +36,12 @@ document.addEventListener("DOMContentLoaded", function () {
       var phone_input = document.querySelector("#phoneID");
       var form = document.getElementById("contact_form1");
 
-      console.log("Form data:", {
-        clientName,
-        designation,
-        orgname,
-        country,
-        email,
-        phone_input,
-        form,
-      });
-
       var status = getRadioValue(form.elements["status"]);
       var events = form.elements["event[]"];
       var technical = form.elements["technical[]"];
       var others = form.elements["others[]"];
       var comment = document.getElementById("commentsID").value.trim();
       var agree = form.elements["agree"].checked;
-
-      console.log("Additional form data:", {
-        status,
-        events,
-        technical,
-        others,
-        comment,
-        agree,
-      });
 
       // Initialize an array to store validation errors
       var errors = [];
@@ -89,16 +70,6 @@ document.addEventListener("DOMContentLoaded", function () {
       if (phone_input.value === "") {
         errors.push("Enter phone number");
         markError("phoneID");
-      } else {
-        // Validate that a country code is selected
-        const selectedCountryData = phoneInput.getSelectedCountryData();
-        if (
-          !selectedCountryData ||
-          Object.keys(selectedCountryData).length === 0
-        ) {
-          errors.push("Please select a valid country code.");
-          markError("phoneID");
-        }
       }
 
       console.log("Validation errors:", errors);
@@ -168,9 +139,11 @@ document.addEventListener("DOMContentLoaded", function () {
       // Get the internationalized phone number
       const phoneNumber = phoneInput.getNumber();
       console.log("International Phone Number:", phoneNumber);
-
+      const countryData = phoneInput.getSelectedCountryData();
+      console.log("Country Data: ", countryData);
       // Replace the original phone_number field with the internationalized phone number
       formData.set("phone_number", phoneNumber);
+
       $.ajax({
         url: "quote_process.php",
         type: "POST",
@@ -179,16 +152,14 @@ document.addEventListener("DOMContentLoaded", function () {
         contentType: false,
         dataType: "json", // Expecting JSON response
         success: function (response) {
+          console.log("Success Response from server:", response);
           if (response.success) {
             $("#error-container").html(
-              "<div class='alert alert-success m-3 p-2'>" +
-                response.message +
-                "</div>"
+              "<div class='alert alert-success'>" + response.message + "</div>"
             );
 
             $("#contact_form1").trigger("reset");
           } else {
-            console.log("Success Response from server:", response);
             let errors = "<ul>";
             for (const [key, value] of Object.entries(response.errors)) {
               errors += "<li>" + value + "</li>";
@@ -201,7 +172,6 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         error: function (jqXHR, textStatus, errorThrown) {
           console.log("Error:", textStatus, errorThrown);
-
           // Check if detailed error information is present in the response
           if (jqXHR.responseJSON && jqXHR.responseJSON.errors) {
             console.log(
@@ -209,7 +179,6 @@ document.addEventListener("DOMContentLoaded", function () {
               jqXHR.responseJSON.errors
             );
           }
-
           $("#error-container").html(
             "<div class='alert alert-danger m-3 p-2'>An error occurred. Please try again.</div>" +
               errorThrown

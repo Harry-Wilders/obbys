@@ -61,7 +61,7 @@
    * spacing
    */
 
-  --section-padding: 16px;
+  --section-padding: 8px;
 
   /**
    * border-radius
@@ -842,6 +842,9 @@ article {
 /*-----------------------------------*\
  * #ABOUT
 \*-----------------------------------*/
+.about {
+  padding-block: var(--section-padding);
+}
 .about__data {
   text-align: center;
 }
@@ -867,14 +870,14 @@ article {
 }
 
 .about__img-one {
-  width: 230px;
+  width: 263px;
   height: auto;
   border-radius: 25px;
   padding: 5px;
 }
 
 .about__img-two {
-  width: 290px;
+  width: 400px;
   border-radius: 30px;
   padding: 5px;
 }
