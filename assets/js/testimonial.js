@@ -1,65 +1,56 @@
 // Testimonial
 
-const testimonialsContainer = document.querySelector(".testimonials-container");
+const testimonialsContainer = document.querySelector(".testimonial-container");
 const testimonial = document.querySelector(".testimonial");
-const userImage = document.querySelector(".user-image");
 const username = document.querySelector(".username");
 const role = document.querySelector(".role");
 
 const testimonials = [
   {
     name: "Miyah Myles",
-    position: "Marketing",
-    photo:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=707b9c33066bf8808c934c8ab394dff6",
-    text: "I've worked with literally hundreds of HTML/CSS developers and I have to say the top spot goes to this guy. This guy is an amazing developer. He stresses on good, clean code and pays heed to the details. I love developers who respect each and every aspect of a throughly thought out design and do their best to put it in code. He goes over and beyond and transforms ART into PIXELS - without a glitch, every time.",
+    position: "Environmental Champion",
+
+    text: "Choosing Obby's Ventures was a no-brainer for my environmentally conscious event needs. From paperless green communications to zero waste initiatives, they prioritize sustainability. With recyclable carry-away boxes, biodegradable utensils, and a commitment to a plastic-free environment, Obby's Ventures leads the way in green event practices.",
   },
   {
     name: "June Cha",
-    position: "Software Engineer",
-    photo: "https://randomuser.me/api/portraits/women/44.jpg",
-    text: "This guy is an amazing frontend developer that delivered the task exactly how we need it, do your self a favor and hire him, you will not be disappointed by the work delivered. He will go the extra mile to make sure that you are happy with your project. I will surely work again with him!",
+    position: "Event Organizer",
+    text: "I rely on Obby's Ventures for their state-of-the-art event technology. From audiovisual services to filming, live streaming, and editing, their world-class technical production services ensure my events are visually and aurally captivating. Trust Obby's Ventures for flawless execution – they never disappoint.",
   },
   {
     name: "Iida Niskanen",
-    position: "Data Entry",
-    photo: "https://randomuser.me/api/portraits/women/68.jpg",
-    text: "This guy is a hard worker. Communication was also very good with him and he was very responsive all the time, something not easy to find in many freelancers. We'll definitely repeat with him.",
+    position: "Content Creator",
+
+    text: "I was blown away by Obby's Ventures' ability to design and build custom stages and backdrops that perfectly complemented my event theme. Their creativity transformed the space into a captivating environment, enhancing the overall experience for me and my attendees. Obby's Ventures is my top choice for visually stunning setups.",
   },
-  {
-    name: "Renee Sims",
-    position: "Receptionist",
-    photo: "https://randomuser.me/api/portraits/women/65.jpg",
-    text: "This guy does everything he can to get the job done and done right. This is the second time I've hired him, and I'll hire him again in the future.",
-  },
+
   {
     name: "Jonathan Nunfiez",
-    position: "Graphic Designer",
-    photo: "https://randomuser.me/api/portraits/men/43.jpg",
-    text: "I had my concerns that due to a tight deadline this project can't be done. But this guy proved me wrong not only he delivered an outstanding work but he managed to deliver 1 day prior to the deadline. And when I asked for some revisions he made them in MINUTES. I'm looking forward to work with him again and I totally recommend him. Thanks again!",
+    position: "Event Planner",
+
+    text: "Obby's Ventures stands out in their commitment to sustainability. Their 'Go Green' initiative, minimizing the use of paper and prioritizing digital communication, reflects a forward-thinking approach. With a focus on zero waste and environmentally friendly practices, Obby's Ventures not only delivers exceptional events but does so with a conscience.",
   },
   {
     name: "Sasha Ho",
-    position: "Accountant",
-    photo:
-      "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?h=350&auto=compress&cs=tinysrgb",
-    text: "This guy is a top notch designer and front end developer. He communicates well, works fast and produces quality work. We have been lucky to work with him!",
+    position: "Tourist",
+
+    text: "Obby's Ventures exceeded my expectations with their ground transportation services. The luxurious brands they offer ensured my comfort throughout the event. The onboard tracking, option of liaisons, guides, or security officers, and thoughtful touches like bottled water and snacks made the transportation experience seamless and enjoyable.",
   },
   {
     name: "Veeti Seppanen",
-    position: "Director",
-    photo: "https://randomuser.me/api/portraits/men/97.jpg",
-    text: "This guy is a young and talented IT professional, proactive and responsible, with a strong work ethic. He is very strong in PSD2HTML conversions and HTML/CSS technology. He is a quick learner, eager to learn new technologies. He is focused and has the good dynamics to achieve due dates and outstanding results.",
+    position: "Journalist",
+
+    text: "The media center and control section at Obby's Ventures is truly impressive. Equipped with cutting-edge technology, it ensures flawless execution during events. From audiovisual production to recording and editing services, their state-of-the-art studio is a hub for delivering high-quality content. Obby's Ventures sets the standard for virtual event production.",
   },
 ];
 
 let idx = 1;
 
 function updateTestimonials() {
-  const { name, position, photo, text } = testimonials[idx];
+  const { name, position, text } = testimonials[idx];
 
   testimonial.innerHTML = text;
-  userImage.src = photo;
+
   username.innerHTML = name;
   role.innerHTML = position;
 

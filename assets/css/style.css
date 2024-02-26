@@ -1220,7 +1220,9 @@ address {
   margin-bottom: 20px;
   margin-top: 10px;
 }
-
+.link-warning:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
 .form-text {
   font-size: var(--fs-5);
   margin-bottom: 20px;

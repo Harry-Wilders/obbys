@@ -139,10 +139,10 @@
 
                 </nav>
 
-                <div class="btn btn-primary">Get A Quote</>
+                <button><a class="btn btn-primary" href="contact.html">Get A Quote</a></button>
 
-                </div>
             </div>
+        </div>
 
     </header>
     <main>
@@ -319,12 +319,24 @@
                             <div class="card-body">
                                 <h4 class="card-title" style="font-size: 1.8rem;  color: #c16228;">TECHNICAL PRODUCTION
                                 </h4>
-                                <p class="card-text" style="font-size: 1rem; margin-top: 10px"><b>We boast in having
-                                        state-of-the-art event technology.</b><br>
-                                    We offer world-class technical production services from audiovisual services to
-                                    filming, live streaming, broadcast
-                                    services, recording, editing services and archiving of event digital content
-                                    created.
+                                <p class="card-text" style="font-size: 1rem; margin-top: 10px">We boast in having
+                                    <em><strong> state-of-the-art event technology.</strong></em> Our commitment to
+                                    excellence drives us
+                                    to
+                                    provide
+                                    <strong class="font-weight-bold">world-class technical production services.</strong>
+                                    <br> From
+                                    <strong>audiovisual services 🔊</strong> to
+                                    <strong><i>filming,live streaming,
+                                            broadcast services 🎥, recording, editing services🎬,</i></strong> and
+                                    <strong><i> archiving
+                                            of
+                                            event digital content created</i></strong>. <br class="pt-1"> We
+                                    ensure that your events are equipped with the latest and most advanced
+                                    technology
+                                    available. Our team of experts is
+                                    dedicated to delivering seamless experiences, making your events truly
+                                    unforgettable!
 
                                 </p>
 
@@ -806,11 +818,11 @@
                     </a>
 
                     <p class="footer-text">
-                        Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium
-                        magna
-                        conubia
-                        at
-                        perferendis, pretium, aenean aut ultrices.
+                        At <strong>Obby’s Ventures Limited</strong>, we offer integrated technical, consulting,
+                        planning, design, and
+                        implementation services for
+                        all your professional events needs. Lets help you <a class="link-warning"
+                            style="color: rgb(250, 124, 6); font-size: 1rem;" href="./services.html">Get Started </a>
                     </p>
 
                 </div>
@@ -820,7 +832,7 @@
                     <h4 class="contact-title">Contact Us</h4>
 
                     <p class="contact-text">
-                        Feel free to contact and reach us !!
+                        Get in touch
                     </p>
 
                     <ul>
@@ -850,7 +862,7 @@
                 <div class="footer-form">
 
                     <p class="form-text">
-                        Subscribe our newsletter for more update & news !!
+                        Subscribe to our newsletter for more update & news
                     </p>
 
                     <form action="" class="form-wrapper">
@@ -868,11 +880,25 @@
             <div class="container">
 
                 <p class="copyright">This website and its content is copyright of
-                    &copy; 2024 <a href="index.html" style="color: rgb(133, 133, 255);"> Obby’s ventures LTD</a>.<br>
+                    &copy; <em><strong id="currentYear"></strong></em> <a href="index.html"
+                        style="color: rgb(133, 133, 255);">
+                        Obby’s Ventures LTD</a><br>
                     All
                     rights
                     reserved
                 </p>
+                <script>
+                    function updateYear() {
+                        var currentYear = new Date().getFullYear();
+                        document.getElementById('currentYear').innerText = currentYear;
+                    }
+
+                    // Call the function to initially set the year
+                    updateYear();
+
+                    // You can set up an interval to update the year automatically (e.g., every second)
+                    setInterval(updateYear, 1000);
+                </script>
 
                 <ul class="footer-bottom-list">
 

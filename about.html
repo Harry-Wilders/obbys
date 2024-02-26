@@ -320,15 +320,15 @@
                 <div class="footer-brand">
 
                     <a href="#" class="logo">
-                        <img src="./assets/images/logo.svg" alt="Obby's Ventures logo">
+                        <img src="./assets/images/logo.png" alt="Obby's Ventures logo">
                     </a>
 
                     <p class="footer-text">
-                        Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium
-                        magna
-                        conubia
-                        at
-                        perferendis, pretium, aenean aut ultrices.
+                        At <strong>Obby’s Ventures Limited</strong>, we offer integrated technical, consulting,
+                        planning, design, and
+                        implementation services for
+                        all your professional events needs. Lets help you <a class="link-warning"
+                            style="color: rgb(250, 124, 6); font-size: 1rem;" href="./services.html">Get Started </a>
                     </p>
 
                 </div>
@@ -338,7 +338,7 @@
                     <h4 class="contact-title">Contact Us</h4>
 
                     <p class="contact-text">
-                        Feel free to contact and reach us !!
+                        Get in touch
                     </p>
 
                     <ul>
@@ -352,7 +352,7 @@
                         <li class="contact-item">
                             <ion-icon name="mail-outline"></ion-icon>
 
-                            <a href="#" class="contact-link">info.Obby's Ventures.com</a>
+                            <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
                         </li>
 
                         <li class="contact-item">
@@ -368,7 +368,7 @@
                 <div class="footer-form">
 
                     <p class="form-text">
-                        Subscribe our newsletter for more update & news !!
+                        Subscribe to our newsletter for more update & news
                     </p>
 
                     <form action="" class="form-wrapper">
@@ -385,9 +385,26 @@
         <div class="footer-bottom">
             <div class="container">
 
-                <p class="copyright">
-                    &copy; 2022 <a href="">codewithsadee</a>. All rights reserved
+                <p class="copyright">This website and its content is copyright of
+                    &copy; <em><strong id="currentYear"></strong></em> <a href="index.html"
+                        style="color: rgb(133, 133, 255);">
+                        Obby’s Ventures LTD</a><br>
+                    All
+                    rights
+                    reserved
                 </p>
+                <script>
+                    function updateYear() {
+                        var currentYear = new Date().getFullYear();
+                        document.getElementById('currentYear').innerText = currentYear;
+                    }
+
+                    // Call the function to initially set the year
+                    updateYear();
+
+                    // You can set up an interval to update the year automatically (e.g., every second)
+                    setInterval(updateYear, 1000);
+                </script>
 
                 <ul class="footer-bottom-list">
 
