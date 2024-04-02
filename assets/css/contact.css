@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
+:root{
+  --primary-color: #ffcf9e;
+  --secondary-color: #587094;
+}
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -67,7 +71,7 @@ body {
 .contact-form .send-button {
   border: none;
   outline: none;
-  background: #00dbde;
+  background: ;
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
